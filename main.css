@@ -1,0 +1,465 @@
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100% !important;
+    height: inherit;
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg-1 {
+    background-image: url(homepage/homepage-banner.png);
+    height: 703px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.logo {
+    padding: 40px;
+    width: 200px;
+    height: 45px;
+}
+nav {
+    background: transparent;
+}
+.nav-item >a:hover {
+    border-bottom: 3px solid white;
+}
+.btn-nav {
+    margin: 20px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    font-weight: bold;
+    border: 1px solid white !important;
+    color: white !important;
+}
+.btn-nav:hover {
+    text-decoration: none;
+    background-color: white !important;
+    color: black !important;
+}
+.btn-nav-right {
+    background-color: white;
+    color: deepskyblue;
+    font-weight: bold !important;
+    margin: 20px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+.btn-nav-right:hover {
+    background-color: #cccccc;
+    color: #000;
+}
+div > ul > li > a {
+    color: white;
+    display: inline-flex;
+
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+div > ul > li > a:hover {
+    text-decoration: none;
+    color: #dddddd;
+}
+.banner-heading {
+    color: white;
+    font-weight: 500;
+    font-size: 45px;
+    font-family: 'Patua One' , "Open Sans";
+    text-align: left;
+    letter-spacing: 1px;
+    margin-top: 100px;
+}
+#banner-img {
+    margin: 30px;
+}
+.btn-banner {
+    background-color: white;
+    color: deepskyblue;
+    font-weight: bold !important;
+    margin: 20px;
+    margin-left: 0px !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.sub-head {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    width: 90%;
+}
+h3 {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: bold !important;
+}
+.dots {
+    height: 6px;
+    width: 30px;
+    vertical-align: middle;
+    margin-top: 80px;
+}
+
+.dis {
+    display: inline-flex;
+}
+.bg-2 {
+    background-image: url(homepage/bg-layer.png);
+    height: 1124px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.head {
+    padding-top: 150px;
+    position: relative;
+}
+.dashboard-img {
+    padding-left: 50px;
+    width: 825px;
+    height: 650px;
+    vertical-align: top;
+}
+.heading-white {
+    color: white;
+    padding-top: 40px;
+}
+.btn-outline-secondary {
+    border-right: hidden;
+    padding: 3px;
+}
+.btn-light {
+    font-size: 13px !important;
+    border-radius: 4px;
+    margin: 10px;
+}
+.bg-3 {
+    background-image: url("homepage/bg-layer-color.png");
+    height: 700px;
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size:100% 100%;
+    background-position: center;
+}
+.box {
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+}
+.box-yellow {
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: yellow;
+}
+/* For Slider */
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+
+    /*required for proper track sizing in FF*/
+    width: 300px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 8px;
+    background: rgba(87,229,52,0.57);
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #21ff00;
+    margin-top: -4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: chartreuse;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #21ff00;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: chartreuse;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: chartreuse !important;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc !important;
+}
+select {
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px #ccc;
+}
+select:hover {
+    box-shadow: 3px 3px #00FFFF;
+}
+.grey-link {
+    color: #cccccc;
+}
+.blue-text {
+    font-weight: bold;
+    color: dodgerblue;
+    font-size: 1.5em;
+}
+.bg-4 {
+    background-image: url(homepage/bg-layer.png);
+    height: 862px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+div > .fa-quote-right {
+    font-size: 40px;
+    color: #cccccc;
+}
+div > .fa-linkedin {
+    color: dodgerblue;
+}
+/* Carousel */
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active ,
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item ,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+        padding-left: -40px;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+table {
+    width:100%;
+}
+table, th, td {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 20px;
+    text-align: center;
+}
+table > tr > td > img {
+    width: 80px;
+    height: 50px;
+}
+td:last-child {
+    border-right: hidden;
+    margin-right: 20px;
+}
+table:last-child {
+    border-bottom: hidden;
+}
+.btn-outline-success {
+    padding: 5px;
+    margin-top: 20px;
+}
+.bg-5 {
+    padding-top: 100px;
+    background-image: url("homepage/contact-layer.png");
+    height: 545px;
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size:100% 100%;
+    background-position: center;
+}
+input[type=text], input[type=number], input[type=email] {
+    height: 50px;
+}
+div > .btn-position {
+    margin-top: 30px; padding-top: 13px; padding-bottom: 13px; font-weight: bold;letter-spacing: 2px;
+    font-size: 15px;
+}
+.bg-6 {
+    background-color: #292c2f;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-props {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 14px sans-serif;
+    color: darkgray;
+    padding: 55px 40px;
+    margin-top: 0px;
+}
+.footer-props > .left-pane {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 20%;
+    display: block;
+}
+.footer-props > div > a {
+    color: darkgray;
+}
+.footer-props > div > a:hover {
+    text-decoration: none;
+    font-weight: bold !important;
+}
+.footer-logo {
+    width: 150px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.footer-props > .left-pane, .footer-props > .second-pane, .footer-props > .last-pane {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-props > .second-pane {
+    width: 20%;
+    line-height: 40px;
+    vertical-align: top;
+}
+.footer-props > .second-pane > a {
+    font-weight: normal !important;
+    letter-spacing: 1px;
+    vertical-align: top;
+    line-height: 40px;
+}
+.footer-props > .second-pane > img {
+
+}
+
+.footer-white-text {
+    color: white;
+    font-weight: normal !important;
+}
+.copyright {
+    background-color: black;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 14px 'Nunito', sans-serif;
+    color: white;
+    padding: 15px 60px;
+    margin-top: 0px;
+}
